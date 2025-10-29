@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send('this is a trial test to learn docker and hosting ');
 });
+app.get('/docker', (req, res) => {
+    res.send('Docker is a platform for developing, shipping, and running applications in containers.');
+});
 app.post('/data', (req, res) => {
     const obj = req.body;
     res.json(obj);
